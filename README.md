@@ -47,3 +47,4 @@ Todos os tokens estão centralizados em [`src/styles/tokens.css`](src/styles/tok
 
 Siga estas diretrizes ao criar novas telas, estados ou componentes. Qualquer cor ou efeito adicional deve ser derivado dos tokens acima para preservar a coerência da marca.
 # v_d_dev
+# v_d_dev
