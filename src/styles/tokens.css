@@ -1,30 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+
 :root {
-  --color-primary-300: #FF6AA6;
-  --color-primary-500: #FF2E7E;
-  --color-primary-700: #D11663;
+  --color-primary-300: #ff6aa6;
+  --color-primary-500: #ff2e7e;
+  --color-primary-700: #d11663;
 
-  --color-secondary-300: #FF927C;
-  --color-secondary-500: #FF6B4A;
-  --color-secondary-700: #D94C2E;
+  --color-secondary-300: #ff927c;
+  --color-secondary-500: #ff6b4a;
+  --color-secondary-700: #d94c2e;
 
-  --color-accent-500: #C400FF;
+  --color-accent-500: #c400ff;
 
-  --color-bg-900: #0B0B12;
+  --color-bg-900: #0b0b12;
   --color-bg-800: #141420;
-  --color-bg-700: #1C1C2C;
+  --color-bg-700: #1c1c2c;
 
-  --color-text: #FFFFFF;
-  --color-text-2: #B8B8C9;
-  --color-border: #2A2A3A;
+  --color-text: #ffffff;
+  --color-text-2: #b8b8c9;
+  --color-border: #2a2a3a;
 
-  --level-leve: #FF6AA6;
-  --level-medio: #FF2E7E;
-  --level-pesado: #D94C2E;
-  --level-extremo: #C400FF;
+  --level-leve: #ff6aa6;
+  --level-medio: #ff2e7e;
+  --level-pesado: #d94c2e;
+  --level-extremo: #c400ff;
 
-  --grad-heat: linear-gradient(135deg, #FF2E7E 0%, #FF6B4A 50%, #C400FF 100%);
-  --glow-dare: radial-gradient(closest-side, rgba(255, 46, 126, 0.65), transparent 70%);
-  --grad-overlay: radial-gradient(120% 120% at 50% 0%, rgba(196, 0, 255, 0.18) 0%, rgba(255, 107, 74, 0.12) 45%, transparent 85%);
+  --grad-heat: linear-gradient(135deg, #ff2e7e 0%, #ff6b4a 50%, #c400ff 100%);
+  --glow-dare: radial-gradient(closest-side, #ff2e7e, transparent 70%);
+  --grad-overlay: radial-gradient(
+    120% 120% at 50% 0%,
+    rgba(196, 0, 255, 0.18) 0%,
+    rgba(255, 107, 74, 0.12) 45%,
+    transparent 85%
+  );
 
   --font-display: 'Bebas Neue', sans-serif;
   --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
