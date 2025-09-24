@@ -56,7 +56,49 @@
   }
 }
 
+@layer components {
+  .interactive-press {
+    transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+  }
+
+  .interactive-press:hover,
+  .interactive-press:focus-visible {
+    transform: scale(1.02);
+    box-shadow: 0 12px 32px rgba(255, 46, 126, 0.35);
+  }
+
+  .interactive-press:active {
+    transform: scale(0.98);
+    box-shadow: 0 10px 26px rgba(255, 46, 126, 0.3);
+  }
+}
+
 @layer utilities {
+  @keyframes cardReveal {
+    0% {
+      opacity: 0;
+      transform: translateY(8px) rotateX(6deg);
+      filter: blur(4px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotateX(0deg);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes boostFlash {
+    0% {
+      box-shadow: 0 0 0 0 rgba(196, 0, 255, 0);
+    }
+    45% {
+      box-shadow: 0 0 0 4px rgba(196, 0, 255, 0.45);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(196, 0, 255, 0);
+    }
+  }
+
   @keyframes shufflePulse {
     0%,
     100% {
@@ -84,5 +126,14 @@
 
   .animate-spin-slower {
     animation: spinSlower 14s linear infinite;
+  }
+
+  .animate-card-reveal {
+    animation: cardReveal 160ms ease-out forwards;
+    transform-origin: center top;
+  }
+
+  .animate-boost-flash {
+    animation: boostFlash 540ms ease-out;
   }
 }
